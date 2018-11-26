@@ -2,7 +2,21 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawerlayout"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Ticket"
+            android:layout_width="141dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Button" />
+    </LinearLayout>
 
     <android.support.design.widget.NavigationView
         app:headerLayout="@layout/header"

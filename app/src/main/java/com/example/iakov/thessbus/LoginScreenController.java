@@ -28,7 +28,7 @@ public class LoginScreenController extends AppCompatActivity {
             public void onClick(View v) {
                 if(Username.getText().toString().equals("admin")&& Password.getText().toString().equals("admin"))
                 {
-                    Intent intent = new Intent(LoginScreenController.this,TestActivity.class);
+                    Intent intent = new Intent(LoginScreenController.this,HomePageController.class);
                     startActivity(intent);
                     Toast.makeText(LoginScreenController.this,"User and Password is correct",Toast.LENGTH_SHORT).show();
                 }
