@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/historylayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".HistoryController">
+
+
+         <LinearLayout
+            android:id="@+id/historyheader"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qrcodelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/borderlayouts"
+                android:gravity="center"
+                android:text="QR code"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                android:textColorLink="@android:color/black" />
+
+            <TextView
+                android:id="@+id/datelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/borderlayouts"
+                android:gravity="center"
+                android:text="Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                android:textColorLink="@android:color/black" />
+
+            <TextView
+                android:id="@+id/buslabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/borderlayouts"
+                android:gravity="center"
+                android:text="Bus"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                android:textColorLink="@android:color/black" />
+
+            <TextView
+                android:id="@+id/pricelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/borderlayouts"
+                android:gravity="center"
+                android:text="Price"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                android:textColorLink="@android:color/black" />
+
+         </LinearLayout>
+
+    <ListView
+        android:id="@+id/historyitemlist"
+        android:layout_width="wrap_content "
+        android:layout_height="match_parent"></ListView>
+
+</RelativeLayout>
