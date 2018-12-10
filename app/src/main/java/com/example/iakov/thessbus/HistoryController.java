@@ -18,25 +18,24 @@ public class HistoryController extends Fragment{
     protected TextView bustxt;
     protected TextView pricetxt;
 
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_history_controller,container,false);
+        View view= inflater.inflate(R.layout.activity_history_controller,container,false);
+           historyitemlist = (ListView) view.findViewById(R.id.historyitemlist);
+           imgview= new ImageView(view.getContext());
+           datetxt= new TextView(view.getContext());
+           bustxt= new TextView(view.getContext());
+           pricetxt= new TextView(view.getContext());
+           imgview.setImageResource(R.drawable.qrcode);
+           datetxt.setText("14/1/2019");
+           bustxt.setText("14A");
+           pricetxt.setText("1$");
+          /* historyitemlist.addView(pricetxt);*/
 
+           return view;
     }
 
-   /* @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        historyitemlist = (ListView) view.findViewById(R.id.historyitemlist);
-        imgview.setImageResource(R.drawable.qrcode);
-        datetxt.setText("14/1/2019");
-        bustxt.setText("14A");
-        pricetxt.setText("1$");
-        historyitemlist.addView(imgview);
-        historyitemlist.addView(datetxt);
-        historyitemlist.addView(bustxt);
-        historyitemlist.addView(pricetxt);
-    }*/
 }
 
 
