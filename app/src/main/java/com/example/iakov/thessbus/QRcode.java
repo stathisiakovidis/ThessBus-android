@@ -21,6 +21,5 @@ public class QRcode {
         BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
         Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
         Path path = FileSystems.getDefault().getPath(filePath);
-
     }
 }

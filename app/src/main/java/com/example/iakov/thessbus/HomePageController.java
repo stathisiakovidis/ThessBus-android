@@ -75,7 +75,10 @@ public class HomePageController extends AppCompatActivity implements NavigationV
 
         if(id == R.id.history)
         {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HistoryController()).commit();
+            Toast.makeText(this,"This is History", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this,HistoryController.class);
+            startActivity(intent);
+            /*  getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HistoryController()).commit();*/
         }
         else if(id == R.id.settings)
         {
@@ -91,7 +94,10 @@ public class HomePageController extends AppCompatActivity implements NavigationV
         }
         else if(id == R.id.home)
         {
+            Intent intent = new Intent(this,HomePageController.class);
+            startActivity(intent);
             Toast.makeText(this,"This is Home", Toast.LENGTH_SHORT).show();
+
         }
         else if(id == R.id.logout)
         {
