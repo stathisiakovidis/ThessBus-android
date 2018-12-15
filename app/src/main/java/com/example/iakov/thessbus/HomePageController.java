@@ -9,6 +9,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -24,12 +25,12 @@ public class HomePageController extends AppCompatActivity implements NavigationV
         /*
 
         if(savedInstanceState== "LoginScreenController"){
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MainPageController()).commit();}
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_contaaaαiner, new MainPageController()).commit();}
 
         */
 
-        /*
-        //paei allou (MainPageController)
+
+
 
         Ticket = (Button)findViewById(R.id.ticket);
 
@@ -38,13 +39,13 @@ public class HomePageController extends AppCompatActivity implements NavigationV
             public void onClick(View v) {
 
 
-                    Intent intent = new Intent(HomePageController.this,TestActivity.class);
+                    Intent intent = new Intent(HomePageController.this,Ticket.class);
                     startActivity(intent);
                     intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 
 
             }
-        });*/
+        });
     }
 
     @Override
